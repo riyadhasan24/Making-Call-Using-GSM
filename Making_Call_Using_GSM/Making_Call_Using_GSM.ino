@@ -13,7 +13,7 @@ void setup()
 
 void loop() 
 {
-  if (digitalRead (Button) == 0)
+  if (digitalRead (Button) == LOW)
     {
       Make_Call(Phone_No);
     }
