@@ -1,3 +1,8 @@
+/*The source code from
+ * Md. Riyad Hasan
+ * www.github.com/riyadhasan24
+*/
+
 #include <SoftwareSerial.h>
 SoftwareSerial MY_GSM(8, 9);
 
@@ -26,7 +31,7 @@ void Make_Call(char *number)
   MY_GSM.print("ATD + "); 
   MY_GSM.print(number); 
   MY_GSM.println(";");
-  delay(15000);       // wait for 20 seconds...
+  delay(20000);       // wait for 20 seconds...
   MY_GSM.println("ATH"); //hang up
   delay(100);
 }
